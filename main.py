@@ -10,4 +10,10 @@ def fibonacci(num):
     lis.append(lis[0]+lis[1]) 
     i+=1 if i > num-3:break 
   return lis[2]
-print(f"F({i}) = {fibonacci(i)}")
+i = input()
+try:
+  i = int(i)
+  print(f"F({i}) = {fibonacci(i)}")
+except:
+  print("this is not number")
+
